@@ -1,0 +1,284 @@
+﻿/* Reset CSS */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Ngăn chặn lỗi dư màn hình */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+.navbar {
+    background: #212529bf;
+    /* Màu xanh đậm */
+    padding: 15px 20px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: white !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #B4D800 !important;
+    }
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 82%; /* Tăng chiều cao để hình ảnh rõ hơn */
+    background: url('img/hero/hero-4.jpg') no-repeat center center;
+}
+
+/* Nếu sử dụng carousel */
+.carousel-item {
+    width: 100%;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Đảm bảo hình không bị méo */
+        filter: contrast(1.1) brightness(1.05); /* Tăng độ rõ nét */
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner {
+        height: 400px; /* Đảm bảo không bị cắt ngắn quá nhiều trên mobile */
+    }
+
+    .carousel-item {
+        height: 400px;
+    }
+}
+
+
+
+/*footer*/
+/* Footer tổng thể */
+.footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 50px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 101%;
+}
+
+/* Footer Logo */
+.footer-logo img {
+    width: 160px;
+    height: auto;
+
+}
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Khu vực trên cùng của footer */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333;
+}
+
+.footer-logo img {
+    width: 160px;
+}
+
+.footer-certifications img {
+    height: 45px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+    .footer-certifications img:hover {
+        transform: scale(1.1);
+    }
+
+.btn-partner {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none;
+}
+
+    .btn-partner:hover {
+        background: linear-gradient(135deg, #0056b3, #003d82);
+    }
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        color: #212529;
+        
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-column ul li a {
+            color: #212529;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+            .footer-column ul li a:hover {
+                color: #B4D800;
+            }
+
+/* Mạng xã hội */
+
+.social-icons {
+    margin-top: 20px;
+}
+
+    .social-icons a img {
+        width: 28px;
+        margin-right: 12px;
+        transition: transform 0.3s ease;
+    }
+
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top, .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-certifications img {
+        margin-bottom: 10px;
+    }
+}
+
+
+/*main baner*/
+.promo-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.promo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    text-align: left;
+}
+
+.promo-subtitle {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.promo-banner {
+    background: #dc3545;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.qr-code {
+    width: 200px;
+}
+
+.app-text {
+    font-weight: bold;
+    margin-top: 10px;
+    color: yellow;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-card {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    color: black;
+}
+
+    .promo-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .promo-card p {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .promo-card span {
+        color: red;
+    }
+
+main {
+    margin-top: 61px; /* Khoảng cách với header */
+    margin-bottom: 40px; /* Khoảng cách với footer */
+}

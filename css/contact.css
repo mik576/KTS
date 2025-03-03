@@ -1,0 +1,111 @@
+﻿/* Định dạng chung */
+.main_new {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Phần thông tin liên hệ */
+.contact-text {
+
+    padding: 30px;
+    border-radius: 8px;
+    
+}
+
+    .contact-text h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .contact-text table {
+        width: 100%;
+    }
+
+    .contact-text td {
+        padding: 10px 0;
+        color: #555;
+    }
+
+.c-o {
+    font-weight: bold;
+}
+
+/* Form liên hệ */
+.contact-form {
+  
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+        resize: none;
+    }
+
+    .contact-form button {
+        background: #198754;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        .contact-form button:hover {
+            background: #ffd700;
+        }
+
+/* Bản đồ */
+.map {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .map iframe {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-4, .col-lg-7 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-text, .contact-form {
+        padding: 20px;
+    }
+
+        .contact-form button {
+            width: 100%;
+        }
+}

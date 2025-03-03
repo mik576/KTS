@@ -1,0 +1,239 @@
+﻿/*test baner*/
+
+
+.hotel-sale {
+    padding: 30px 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Màu vàng */
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.sale-banner {
+    background: linear-gradient(135deg, #dc3545, #dc3545);
+    color: white;
+    min-height: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.big-sale {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Màu vàng */
+}
+
+.flash-sale {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700; /* Màu vàng */
+}
+
+
+.btn-primary {
+    background-color: #4fba69 !important;
+    border-color: yellow !important;
+    color: black !important;
+}
+
+    .btn-primary:hover {
+        background-color: gold !important;
+        border-color: gold !important;
+        color: black !important;
+    }
+
+.swiper {
+    padding: 20px 0; /* Thêm khoảng trống trên dưới */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.hotel-card {
+    width: 100%;
+    max-width: 350px; /* Giới hạn kích thước */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+    .hotel-card img {
+        width: 100%;
+        height: 200px; /* Giữ tỷ lệ ảnh */
+        object-fit: cover;
+    }
+
+.card-body {
+    text-align: center;
+    padding: 7px;
+}
+
+.hotel-card-link {
+    text-decoration: none; /* Xóa gạch chân mặc định */
+    color: inherit; /* Giữ nguyên màu chữ */
+    display: block; /* Đảm bảo liên kết bao trọn cả card */
+}
+
+
+
+/*hotel-sale moble*/
+@media (max-width: 768px) {
+    /* Căn giữa và tạo khoảng cách cho các swiper-slide trên mobile */
+    .swiper-wrapper {
+        gap: 10px; /* Tạo khoảng cách giữa các slide */
+    }
+
+    .swiper-slide {
+        max-width: 100%; /* Đảm bảo slide không bị co lại */
+        padding: 10px; /* Thêm khoảng cách cho mỗi slide */
+    }
+
+    /* Căn giữa sale-banner trên điện thoại */
+    .sale-banner {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+        /* Đưa nội dung sale-banner xuống thành hai hàng song song trên mobile */
+        .sale-banner .big-sale,
+        .sale-banner .flash-sale {
+            display: block;
+            width: 100%;
+        }
+}
+
+
+/*promo-section mobile*/
+
+@media (max-width: 768px) {
+    .promo-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Tăng khoảng cách giữa QR Code và promo-cards */
+    }
+
+    .qr-code {
+        width: 180px; /* Giảm nhẹ kích thước QR để cân đối */
+        margin-bottom: 20px; /* Thêm khoảng cách phía dưới QR Code */
+    }
+
+    .promo-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Tăng khoảng cách giữa các thẻ */
+    }
+
+    .promo-card {
+        width: 90%; /* Giữ kích thước hợp lý trên điện thoại */
+        padding: 15px;
+    }
+}
+
+
+/* Tùy chỉnh chung cho nút điều hướng */
+
+
+
+
+
+/*ship*/
+
+.cruise-card {
+    height: 100%; /* Đảm bảo chiều cao đồng đều */
+    display: flex;
+    flex-direction: column;
+}
+
+    .cruise-card .card-body {
+        flex-grow: 1; /* Đẩy nội dung bên trong để chiều cao các card đều nhau */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cruise-card .btn-primary {
+        margin-top: auto; /* Đẩy nút xuống dưới cùng */
+    }
+/*main bane*/
+.promo-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.promo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    text-align: left;
+}
+
+.promo-subtitle {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.promo-banner {
+    background: #dc3545;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.qr-code {
+    width: 200px;
+}
+
+.app-text {
+    font-weight: bold;
+    margin-top: 10px;
+    color: yellow;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-card {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    color: black;
+}
+
+    .promo-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .promo-card p {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .promo-card span {
+        color: red;
+    }
+

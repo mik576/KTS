@@ -1,0 +1,179 @@
+﻿
+
+
+
+.spaimg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Đưa ảnh về bên trái */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    position: relative;
+}
+
+
+
+/* Căn chỉnh bố cục */
+.spa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa spa */
+    border-radius: 10px;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .spa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spablog {
+        max-width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    .spaimg {
+        justify-content: center; /* Căn giữa hình ảnh trên mobile */
+    }
+}
+
+.spablog {
+    background: white;
+    padding: 20px;
+    border-left: 8px solid #7BAE45;
+    border-top: 5px solid #7BAE45;
+    border-right: 5px solid #7BAE45;
+    border-bottom: 5px solid #212529;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.spaimg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Đưa ảnh về bên phải */
+    align-items: center;
+    position: relative;
+}
+
+    .spaimg img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+@media (max-width: 992px) {
+    .spa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spablog {
+        max-width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    .spaimg {
+        justify-content: center; /* Căn giữa hình ảnh trên mobile */
+    }
+}
+
+
+/**/
+
+.yogablog {
+    background: white;
+    padding: 20px;
+    border-left: 8px solid #7BAE45; /* Viền trái màu xanh lá */
+    border-top: 5px solid #7BAE45; /* Viền trên màu xanh lá */
+    border-bottom: 5px solid #212529; /* Viền dưới màu xanh dương */
+    border-right: 5px solid #7BAE45;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 45%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: auto;
+    transform: translateY(-50%);
+    padding-bottom: 40px;
+    z-index: 2;
+}
+
+    .yogablog h5 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .yogablog p,
+    .yogablog div {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333;
+    }
+
+.yogaimg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Đưa ảnh về bên trái */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    position: relative;
+}
+
+    .yogaimg img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+/* Căn chỉnh bố cục */
+.yoga {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa yoga */
+    border-radius: 10px;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .yoga {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yogablog {
+        max-width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    .yogaimg {
+        justify-content: center; /* Căn giữa hình ảnh trên mobile */
+    }
+}
